@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsersActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        app:srcCompat="@drawable/dental1" />
+
+    <TextView
+        android:id="@+id/dec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="213dp"
+        android:text="تطبيق طبيبك لتجيمع جميع تقاير المرضى
+                        في مكان واحد           "
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Doctor"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="دكتور "
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:onClick="doctor"
+            android:background="#5a83b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/Patient"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:background="#26558c"
+            android:onClick="patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مريض " />
+    </LinearLayout>
+</RelativeLayout>

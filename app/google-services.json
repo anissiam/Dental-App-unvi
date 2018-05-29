@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1031569534329",
+    "firebase_url": "https://dentalaandm.firebaseio.com",
+    "project_id": "dentalaandm",
+    "storage_bucket": "dentalaandm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031569534329:android:45b99fd3ef34901f",
+        "android_client_info": {
+          "package_name": "com.dental.anisandmahmmoud.dentalaandm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031569534329-nnn74bues3ir15okm4c7rgtk5mvr9o7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcMUydt-PMqIC1pej7BJWR0lrJFa2LFf0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

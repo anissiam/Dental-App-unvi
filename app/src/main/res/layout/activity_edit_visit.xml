@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditVisitActivity"
+    android:background="#66447c9b"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative_img"
+        android:layout_width="320dp"
+        android:layout_height="530dp"
+        android:background="@drawable/add_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+
+        <ImageButton
+            android:id="@+id/btn_Save"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_cercel"
+            android:src="@drawable/ic_save"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="13dp"
+            android:contentDescription="TODO" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_Id_patient"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignEnd="@+id/tv_complaint"-->
+        <!--android:layout_alignRight="@+id/tv_complaint"-->
+        <!--android:text="رقم الزيارة"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="15sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/et_Id_visit"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:textColor="#000"-->
+        <!--android:layout_below="@id/tv_Id_patient"-->
+        <!--android:paddingHorizontal="20dp"-->
+        <!--android:lines="1"-->
+        <!--android:inputType="number"-->
+        <!--android:maxLines="1"-->
+        <!--android:ellipsize="end"-->
+        <!--android:maxLength="2"-->
+        <!--android:gravity="right"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textStyle="bold"-->
+
+        <!--/>-->
+
+
+        <!--
+
+                <TextView
+                    android:id="@+id/tv_complaint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الشكوى"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    />
+
+                <EditText
+                    android:id="@+id/et_complaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#000"
+                    android:layout_below="@id/tv_complaint"
+                    android:paddingHorizontal="20dp"
+                    android:inputType="text"
+                    android:gravity="right"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_Diagnosis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="التشخيص"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_below="@id/et_complaint"
+                    />
+
+                <EditText
+                    android:id="@+id/et_Diagnosis"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#000"
+                    android:layout_below="@id/tv_Diagnosis"
+                    android:paddingHorizontal="20dp"
+                    android:inputType="text"
+                    android:gravity="right"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+
+                    />
+        -->
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="إضافة الزيارة التالية "/>
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:id="@+id/Lin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_after"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="المتبقي بعد"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+            <TextView
+                android:id="@+id/tv_now"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="الدفع"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+            <TextView
+                android:id="@+id/tv_before"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="المتبقي قبل"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="الكلي"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/lin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/Lin1"
+            >
+            <EditText
+                android:id="@+id/et_after"
+                android:layout_width="80dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_now"
+                android:layout_width="80dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_before"
+                android:layout_width="80dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_all"
+                android:layout_width="80dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="2dp"
+            android:id="@+id/nDate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="addNextVisitD"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@id/et_Notes"
+            android:layout_toLeftOf="@+id/tv_visitDate"
+            android:background="@drawable/add_button"
+            />
+        <TextView
+            android:id="@+id/tv_Notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ملاحظات"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@id/lin2"
+            />
+
+        <EditText
+            android:id="@+id/et_Notes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textColor="#000"
+            android:layout_below="@id/tv_Notes"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/edit_shap"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            />
+        <TextView
+            android:id="@+id/tv_visitDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="تاريخ الزيارة "
+            android:layout_marginRight="10dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_below="@id/et_Notes"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_visitDatee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:inputType="date"
+            android:layout_below="@+id/tv_visitDate"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

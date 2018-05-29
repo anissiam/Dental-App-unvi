@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66447c9b"
+    tools:context=".RegistrationActivity">
+    <RelativeLayout
+        android:id="@+id/relative_img"
+        android:layout_width="320dp"
+        android:layout_height="350dp"
+        android:background="@drawable/add_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_login_new"
+            android:layout_marginBottom="10dp"
+            android:text="تسجيل الدخول"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:onClick="regDoctor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_SignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إنشاء حساب جديد"
+            android:textSize="20sp"
+            android:textColor="#1d2840"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الاميل"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@+id/tv_SignUp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_email"
+            android:layout_below="@+id/tv_email"
+            >
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="#000"
+                android:layout_below="@id/tv_email"
+                android:paddingHorizontal="20dp"
+                android:inputType="textEmailAddress"
+                android:textSize="13sp"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:textStyle="bold"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="كلمة السر"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@id/txt_email"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_password"
+            android:layout_below="@+id/tv_password"
+
+            >
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="#000"
+                android:layout_below="@id/tv_password"
+                android:paddingHorizontal="20dp"
+                android:inputType="textPassword"
+                android:textSize="13sp"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:textStyle="bold"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

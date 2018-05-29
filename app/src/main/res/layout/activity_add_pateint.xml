@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPateintActivity"
+    android:background="#66447c9b"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/relative_img"
+        android:layout_width="320dp"
+        android:layout_height="530dp"
+        android:background="@drawable/add_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+
+
+        <ImageButton
+            android:id="@+id/btn_Save"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/button_cercel"
+            android:src="@drawable/ic_save"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="13dp"
+            />
+
+
+
+
+        <!--///////////////////////-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_Id_Patient"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="رقم المريض"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="15sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_below="@+id/relative_img"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/et_Add_Id_Patient"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:textColor="#000"-->
+        <!--android:layout_below="@+id/tv_Id_Patient"-->
+        <!--android:inputType="number"-->
+        <!--android:enabled="false"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginTop="5dp"-->
+
+        <!--/>-->
+
+        <!--///////////////////////-->
+
+        <TextView
+            android:id="@+id/tv_Name_Patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اسم المريض"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:id="@+id/et_Add_Name_Patient"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:layout_below="@+id/tv_Name_Patient"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:inputType="text"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+            android:paddingHorizontal="20dp"
+
+            />
+
+        <!--///////////////////////-->
+
+        <TextView
+            android:id="@+id/tv_Age_Patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عمر المريض"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@id/et_Add_Name_Patient"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/et_Add_Age_Patient"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:layout_below="@+id/tv_Age_Patient"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textSize="13sp"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+            android:paddingHorizontal="20dp"
+            android:maxLength="3"
+            />
+        <TextView
+            android:id="@+id/tv_Tele_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رقم الجوال"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@id/et_Add_Age_Patient"
+            />
+
+        <EditText
+            android:id="@+id/et_Tele_p"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:layout_below="@id/tv_Tele_p"
+            android:inputType="number"
+            android:paddingHorizontal="20dp"
+            android:textSize="13sp"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+            android:maxLength="10"
+
+            />
+
+
+        <!--///////////////////////-->
+
+        <TextView
+            android:id="@+id/tv_Sex_Patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الجنس"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_below="@id/et_Tele_p"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/radio_group_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_Sex_Patient"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_marginRight="90dp">
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ذكر"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_Sex_Patient"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="12sp"
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="أنثى"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:checked="true"
+                android:layout_below="@id/tv_Sex_Patient"
+                android:layout_toLeftOf="@id/radio_male"
+                android:layout_marginRight="10dp"
+                android:textSize="12sp"
+
+                />
+        </RadioGroup>
+
+        <!--<RadioGroup-->
+        <!--android:id="@+id/radio_group_sex"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tv_Sex_Patient"-->
+        <!--&gt;-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/radio_male"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="ذكر"-->
+        <!--android:textColor="#000"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_below="@id/tv_Sex_Patient"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--/>-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/radio_female"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="إنثى"-->
+        <!--android:textColor="#000"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_below="@id/radio_male"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--/>-->
+        <!--</RadioGroup>-->
+
+        <!--///////////////////////-->
+
+        <TextView
+            android:id="@+id/tv_NCD_Patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NCD"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_below="@id/radio_group_sex"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_sugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سكر"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_NCD_Patient"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ضغظ"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_NCD_Patient"
+            android:layout_toLeftOf="@id/checkbox_sugar"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_Psychological"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نفسي"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_NCD_Patient"
+            android:layout_toLeftOf="@id/checkbox_pressure"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            />
+
+
+        <!--///////////////////////-->
+
+        <TextView
+            android:id="@+id/tv_Smoking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مدخن"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_below="@id/checkbox_Psychological"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_smoking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_Smoking"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_marginRight="90dp"
+            android:textSize="12sp"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_False_smoking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لا"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_Smoking"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="12sp"
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio_True_smoking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نعم"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:checked="true"
+                android:layout_below="@id/tv_Smoking"
+                android:layout_toLeftOf="@id/radio_True_smoking"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                />
+        </RadioGroup>
+        <!--///////////////////////-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

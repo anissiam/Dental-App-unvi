@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VisitActivity"
+    android:background="#66447c9b"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative_img"
+        android:layout_width="320dp"
+        android:layout_height="530dp"
+        android:background="@drawable/add_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+
+
+        <ImageButton
+            android:id="@+id/btn_Save"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_cercel"
+            android:src="@drawable/ic_save"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="13dp"
+            />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_Id_patient"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignEnd="@+id/tv_complaint"-->
+        <!--android:layout_alignRight="@+id/tv_complaint"-->
+        <!--android:text="رقم الزيارة"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="15sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginTop="20dp"/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/et_Id_visit"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:textColor="#000"-->
+        <!--android:layout_below="@id/tv_Id_patient"-->
+        <!--android:paddingHorizontal="20dp"-->
+        <!--android:lines="1"-->
+        <!--android:inputType="number"-->
+        <!--android:maxLines="1"-->
+        <!--android:ellipsize="end"-->
+        <!--android:maxLength="2"-->
+        <!--android:textSize="13sp"-->
+        <!--android:gravity="right"-->
+        <!--android:paddingRight="20dp"-->
+        <!--android:textStyle="bold"-->
+
+
+        <!--/>-->
+
+
+
+        <TextView
+            android:id="@+id/tv_complaint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الشكوى"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+
+            />
+        <!--android:layout_below="@id/et_Id_visit"-->
+
+
+        <EditText
+            android:id="@+id/et_complaint"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:layout_below="@id/tv_complaint"
+            android:paddingHorizontal="20dp"
+            android:inputType="text"
+            android:textSize="13sp"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_Diagnosis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="التشخيص"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@id/et_complaint"
+            />
+
+        <EditText
+            android:id="@+id/et_Diagnosis"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:layout_below="@id/tv_Diagnosis"
+            android:paddingHorizontal="20dp"
+            android:inputType="text"
+            android:textSize="13sp"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+
+
+
+
+            />
+
+        <TextView
+            android:id="@+id/tv_Notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ملاحظات"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@id/et_Diagnosis"
+            />
+
+        <EditText
+            android:id="@+id/et_Notes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textColor="#000"
+            android:layout_below="@id/tv_Notes"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/edit_shap"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="13sp"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

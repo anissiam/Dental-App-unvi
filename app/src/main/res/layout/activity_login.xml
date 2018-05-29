@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a79ac"
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="500dp"
+        android:background="@drawable/relative_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relative_google"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shap_google"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="10dp"
+
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_google_img"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/btn_sign_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Google+"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#5b5b5b"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shap_facebook"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@id/relative_google"
+
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="70dp"
+                android:background="@drawable/facebook"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/btn_sign_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with facebook"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:layout_below="@id/relative_facebook"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الاميل"
+            android:textSize="15sp"
+            android:layout_below="@id/tv_or"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#314f73"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_email"
+            android:layout_below="@+id/tv_email"
+            >
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_email"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:gravity="right"
+                android:inputType="textEmailAddress"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="كلمة السر"
+            android:textSize="15sp"
+            android:layout_below="@id/txt_email"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#314f73"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_password"
+            android:layout_below="@+id/tv_password"
+
+            >
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_password"
+                android:layout_marginHorizontal="20dp"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:gravity="right"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نسيت كلمة المرور ؟؟"
+            android:textSize="15sp"
+            android:onClick="resetPasss"
+            android:layout_below="@id/txt_password"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="#314f73"
+            />
+
+        <TextView
+            android:id="@+id/tv_SignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تسجيل حساب جديد"
+            android:onClick="newAccount"
+            android:textColor="#314f73"
+            android:textSize="13sp"
+            android:layout_below="@id/txt_password"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_login_new"
+            android:layout_marginBottom="10dp"
+            android:text="تسجيل الدخول"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:onClick="loginWithEmail"
+            android:layout_marginHorizontal="10dp"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

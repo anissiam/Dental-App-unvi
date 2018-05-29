@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_Doc_Activity">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/profile_background_new"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_doc"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/profileii"
+                android:layout_centerHorizontal="true"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="1dp"
+                android:layout_marginTop="30dp"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_more"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_shap"
+                android:src="@drawable/edit"
+                android:onClick="editDoc"
+                android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_Name_Doc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/img_work"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_below="@id/relative1"
+        android:background="@drawable/locationwork"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_Clinc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_below="@id/relative1"
+        android:layout_toLeftOf="@id/img_work"
+        android:gravity="right"
+        android:paddingTop="5dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="30dp"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/img_address"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_below="@id/img_work"
+        android:background="@drawable/location"
+        />
+
+    <TextView
+        android:id="@+id/tv_FullAdderss"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#000"
+        android:layout_toLeftOf="@id/img_address"
+        android:layout_below="@id/tv_Clinc"
+        android:paddingHorizontal="20dp"
+        android:gravity="right"
+        android:paddingTop="8dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/img_Tele"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_below="@id/img_address"
+        android:background="@drawable/telephone"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/tv_Tele"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#000"
+        android:layout_toLeftOf="@id/img_Tele"
+        android:layout_below="@id/tv_FullAdderss"
+        android:paddingHorizontal="20dp"
+        android:gravity="right"
+        android:paddingTop="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/img_Email"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_below="@id/img_Tele"
+        android:background="@drawable/email"
+        />
+
+    <TextView
+        android:id="@+id/tv_Email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#000"
+        android:layout_toLeftOf="@id/img_Email"
+        android:layout_below="@id/tv_Tele"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="20dp"
+        android:gravity="right"
+        android:paddingTop="8dp"
+
+
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape_cercle_delete"
+        android:text="حذف الحساب"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:onClick="signOut"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBarr"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|bottom"
+        android:theme="@style/AppTheme.WhiteAccent"
+        android:layout_marginBottom="68dp" />
+</RelativeLayout>

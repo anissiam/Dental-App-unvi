@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dental.anisandmahmmoud.dentalaandm">
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION0" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dental1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name=".SplashMainActivity"></activity> -->
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".DocDataActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".AddPateintActivity" />
+        <activity android:name=".ListPateintActivity" />
+        <activity android:name=".Profile_Doc_Activity" />
+        <activity android:name=".VisitActivity" />
+        <activity android:name=".Profile_Patient_Activity" />
+        <activity android:name=".EditVisitActivity" />
+        <activity android:name=".AddNextVisitActivity" />
+        <activity android:name=".Activity_View_Doc" />
+        <activity android:name=".DatesActivity" />
+        <activity android:name=".UsersActivity" />
+        <activity android:name=".TodayActivity" />
+        <activity android:name=".WeekActivity" />
+        <activity android:name=".MonthActivity" />
+        <activity android:name=".YearActivity" />
+        <activity android:name=".DentitionActivity" />
+        <activity android:name=".ProplemActivity" />
+        <activity android:name=".ListVisitActivity" />
+        <activity android:name=".ProblemOtherActivity" />
+        <activity android:name=".EditProblemActivity" />
+        <activity android:name=".LoginPatientActivity" />
+        <activity android:name=".ProfilePatientPatientActivity" />
+        <activity android:name=".ListVisitPatientActivity"></activity>
+    </application>
+
+</manifest>

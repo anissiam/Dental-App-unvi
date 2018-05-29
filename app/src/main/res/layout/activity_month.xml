@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonthActivity"
+    >
+    <include
+        layout="@layout/toolbar_layout">
+    </include>
+
+
+    <TextView
+        android:layout_marginTop="55dp"
+        android:id="@+id/dateview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="الخميس /20/ابريل "
+        android:gravity="center"
+        android:background="#4065a9"
+        android:textColor="#262680"
+        android:textSize="20dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_paetint"
+        android:layout_below="@+id/dateview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/progressBarr"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:theme="@style/AppTheme.WhiteAccent"
+        android:layout_gravity="center|bottom" />
+
+    <!--android:visibility="gone" -->
+
+    <!--<TextView-->
+    <!--android:layout_width="15dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="أ بتثجحخدذرزسشصضطظعغفقكل منهـوي"-->
+    <!--android:textColor="#000"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:paddingRight="5dp"-->
+    <!--android:layout_marginTop="80dp"-->
+    <!--/>-->
+
+
+
+</RelativeLayout>

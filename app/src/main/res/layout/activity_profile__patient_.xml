@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_Patient_Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/a2"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_patient"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profileii"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="#7fcfcb"
+            app:civ_border_width="1dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_Name_Patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  "
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/img_patient"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_more"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/more"
+            app:civ_border_color="#e7f6ff"
+            app:civ_border_width="1dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            />
+        <!--<ImageButton
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/more"
+            android:textSize="12sp"
+            android:textStyle="bold"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            />-->
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative1"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relative3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الشكوى "
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="80dp"
+                android:layout_height="36dp"
+                android:background="@drawable/button_shape_cercle"
+                android:text="إضافة شكوى"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:onClick="add_Problem"
+                android:layout_marginLeft="2dp"
+                />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_paetint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relative3"
+            android:layout_marginTop="5dp"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/progressBarr"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:theme="@style/AppTheme.WhiteAccent"
+            android:layout_gravity="center|bottom" />
+    </RelativeLayout>
+
+    <!--///////////////////////////////////////////////////////-->
+
+    <RelativeLayout
+        android:id="@+id/relative4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative1"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_Age_Patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عمر المريض"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@id/et_telephone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/et_Add_Age_Patient"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:text="13"
+            android:layout_below="@+id/tv_Age_Patient"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:maxLength="3"
+            />
+
+        <!--///////////////////////-->
+
+        <TextView
+            android:id="@+id/tv_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رقم الجوال"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <EditText
+            android:id="@+id/et_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="059717883"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:layout_below="@id/tv_telephone"
+            android:layout_marginTop="2dp"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+            android:maxLength="10"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_NCD_Patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NCD"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@id/et_Add_Age_Patient"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_sugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سكر"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_NCD_Patient"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="105dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ضغظ"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_NCD_Patient"
+            android:layout_toLeftOf="@id/checkbox_sugar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_Psychological"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نفسي"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_NCD_Patient"
+            android:layout_toLeftOf="@id/checkbox_pressure"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <!--///////////////////////-->
+
+        <TextView
+            android:id="@+id/tv_Smoking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مدخن"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@id/checkbox_Psychological"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_smoking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_Smoking"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_False_smoking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لا"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_Smoking"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_True_smoking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نعم"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:checked="true"
+                android:layout_below="@id/tv_Smoking"
+                android:layout_toLeftOf="@id/radio_True_smoking"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="30dp"
+                />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape_cercle"
+            android:onClick="UpdateP"
+            android:text="حفظ"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_shape_cercle_delete"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:text="حذف"
+            android:onClick="deletePa"
+            android:layout_marginBottom="5dp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

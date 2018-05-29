@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DocDataActivity"
+    android:background="#66447c9b"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative_img"
+        android:layout_width="320dp"
+        android:layout_height="530dp"
+        android:background="@drawable/add_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_dc_data_view"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/view_data"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="1dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <ImageButton
+            android:id="@+id/btn_Save"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_cercel"
+            android:src="@drawable/ic_save"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="13dp"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_adderss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اسم العيادة"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@+id/img_dc_data_view"
+            />
+
+        <EditText
+            android:id="@+id/et_Clinic_Name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:layout_below="@id/tv_adderss"
+            android:paddingHorizontal="20dp"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_nameDoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اسم الطبيب"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@id/et_Clinic_Name"
+            />
+
+        <EditText
+            android:id="@+id/et_nameDoc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:layout_below="@id/tv_nameDoc"
+            android:paddingHorizontal="20dp"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_FullAdderss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="العنوان"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@id/et_nameDoc"
+            />
+
+        <EditText
+            android:id="@+id/et_FullAdderss"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:layout_below="@id/tv_FullAdderss"
+            android:paddingHorizontal="20dp"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_Tele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رقم الجوال"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@id/et_FullAdderss"
+            />
+
+        <EditText
+            android:id="@+id/et_Tele"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:layout_below="@id/tv_Tele"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingHorizontal="20dp"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="البريد الإلكتروني "
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@id/et_Tele"
+            />
+
+        <EditText
+            android:id="@+id/et_Email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:layout_below="@id/tv_Email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="20dp"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
